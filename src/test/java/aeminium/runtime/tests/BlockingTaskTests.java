@@ -45,7 +45,10 @@ public class BlockingTaskTests extends BaseTest {
 
 		rt.shutdown();
 	}
-
+	@Test
+	public void testThatAlwaysFails() {
+		assertTrue(false);
+	}
 
 	@Test
 	public void manyTasks() {
